@@ -9,17 +9,19 @@ import java.util.zip.ZipOutputStream;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws IOException {
-        List<String> list = List.of("C:/Games/save.dat", "C:/Games/save1.dat", "C:/Games/save2.dat");
+        List<String> list = List.of("C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save.dat",
+                "C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save1.dat",
+                "C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save2.dat");
         GameProgress gameProgress = new GameProgress(94, 10, 2, 254.3);
         GameProgress gameProgress1 = new GameProgress(80, 20, 30, 200);
         GameProgress gameProgress2 = new GameProgress(91, 35, 10, 158);
-        saveGames("C:/Games/save.dat", gameProgress);
-        saveGames("C:/Games/save1.dat", gameProgress1);
-        saveGames("C:/Games/save2.dat", gameProgress2);
-        zipFiles("C:/Games/zip_out.zip", list);
-        deleteFile("C:/Games/save.dat");
-        deleteFile("C:/Games/save1.dat");
-        deleteFile("C:/Games/save2.dat");
+        saveGames("C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save.dat", gameProgress);
+        saveGames("C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save1.dat", gameProgress1);
+        saveGames("C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save2.dat", gameProgress2);
+        zipFiles("C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/zip_out.zip", list);
+        deleteFile("C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save.dat");
+        deleteFile("C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save1.dat");
+        deleteFile("C:/Users/PC USER/IdeaProjects/Zagruzka/Games/savegames/save2.dat");
 
 
     }
